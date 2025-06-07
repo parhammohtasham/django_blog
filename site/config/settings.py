@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     'pages',
     'crispy_forms',
     'crispy_bootstrap4',
+    'accounts',
+
+
 
 ]
 
@@ -126,4 +129,6 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CRISPY_ALLOWED_TEMPLATE_PACKS='bootstrap4'
-CRISPY_TAMPLATE_PACK='bootstrap4'
+CRISPY_TEMPLATE_PACK='bootstrap4'
+
+AUTH_USER_MODEL = "accounts.CustomUser"
